@@ -1,6 +1,6 @@
 {
   "name": "@wardes/eslint-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Personal ESLint config",
   "repository": "W4rd3s/eslint-config",
   "main": "index.js",

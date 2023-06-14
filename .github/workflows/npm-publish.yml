@@ -19,12 +19,12 @@ jobs:
     env:
       NPM_CONFIG_PROVENANCE: true
     steps:
-#      - name: Main branch only
-#        run: |
-#          if [[ "${{ github.ref }}" != "refs/heads/main" ]]; then
-#            echo "Workflow can only be executed on 'main'"
-#            exit 1
-#          fi
+      - name: Main branch only
+        run: |
+          if [[ "${{ github.ref }}" != "refs/heads/main" ]]; then
+            echo "Workflow can only be executed on 'main'"
+            exit 1
+          fi
 
       - name: Set WORKING_DIRECTORY environment variable
         id: working_directory
