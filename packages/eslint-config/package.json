@@ -1,7 +1,7 @@
 {
   "name": "@wardes/eslint-config",
   "version": "1.0.3",
-  "description": "Personal ESLint config",
+  "description": "Personal ESLint config (javascript)",
   "repository": "W4rd3s/eslint-config",
   "main": "index.js",
   "scripts": {},

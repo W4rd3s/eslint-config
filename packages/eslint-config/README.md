@@ -1,6 +1,6 @@
 # eslint-config
 
-> Personal Eslint config
+> Personal Eslint config (javascript)
 
 ## Installation
 
