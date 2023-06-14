@@ -1,0 +1,65 @@
+name: NPM Package Deployment
+
+on:
+  workflow_dispatch:
+    inputs:
+      package:
+        description: 'Package to deploy'
+        required: true
+        type: choice
+        options:
+          - eslint-config
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      NPM_CONFIG_PROVENANCE: true
+    steps:
+      - name: Main branch only
+        run: |
+          if [[ "${{ github.ref }}" != "refs/heads/main" ]]; then
+            echo "Workflow can only be executed on 'main'"
+            exit 1
+          fi
+
+      - name: Set WORKING_DIRECTORY environment variable
+        id: working_directory
+        run: echo "WORKING_DIRECTORY=./packages/${{ github.event.inputs.package }}" >> $GITHUB_OUTPUT
+
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Git
+        run: |
+          git config user.name "Github Actions"
+          git config user.email "action@github.com"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          registry-url: https://registry.npmjs.org/
+
+      - name: Set up pnpm
+        run: npm install -g pnpm
+
+      - name: Install dependencies
+        working-directory: ${{ steps.working_directory.outputs.WORKING_DIRECTORY }}
+        run: pnpm install --production
+
+      - name: Get package version
+        working-directory: ${{ steps.working_directory.outputs.WORKING_DIRECTORY }}
+        id: get-version
+        run: echo "version=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
+
+      ############# NPM RELEASE #############
+      - name: Publish package to NPM
+        working-directory: ${{ steps.working_directory.outputs.WORKING_DIRECTORY }}
+        run: pnpm publish --provenance --no-git-checks --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+

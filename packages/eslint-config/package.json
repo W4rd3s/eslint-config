@@ -1,0 +1,30 @@
+{
+  "name": "@wardes/eslint-config",
+  "version": "1.0.3",
+  "description": "Personal ESLint config",
+  "repository": "W4rd3s/eslint-config",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config"
+  ],
+  "author": "Wardes",
+  "license": "MIT",
+  "prettier": "@wardes/prettier-config",
+  "peerDependencies": {
+    "eslint": "^8.35.0",
+    "eslint-plugin-import": "^2.27.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.37.0",
+    "@wardes/prettier-config": "^1.0.4",
+    "eslint": "^8.37.0",
+    "prettier": "^2.8.7"
+  },
+  "dependencies": {
+    "confusing-browser-globals": "^1.0.11",
+    "eslint-plugin-import": "^2.27.5"
+  }
+}
