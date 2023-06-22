@@ -17,16 +17,16 @@
   "prettier": "@wardes/prettier-config",
   "peerDependencies": {
     "eslint": "^8.35.0",
-    "eslint-plugin-import": "^2.27.0"
+    "typescript": "*",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0"
   },
   "devDependencies": {
-    "@types/eslint": "^8.21.1",
-    "@wardes/prettier-config": "^1.0.1",
+    "prettier": "^2.8.4",
     "eslint": "^8.35.0",
-    "prettier": "^2.8.4"
-  },
-  "dependencies": {
-    "confusing-browser-globals": "^1.0.11",
-    "@wardes/eslint-config": "^1.0.0"
+    "@wardes/prettier-config": "^1.0.1",
+    "@wardes/eslint-config": "^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0"
   }
 }
