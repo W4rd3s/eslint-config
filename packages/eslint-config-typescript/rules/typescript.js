@@ -87,7 +87,7 @@ module.exports = {
 
     // Require a specific member delimiter style for interfaces and type literals
     // https://typescript-eslint.io/rules/member-delimiter-style/
-    "@typescript-eslint/member-delimiter-style": "off",
+    "@typescript-eslint/member-delimiter-style": "off", // off: linter rule
 
     // Require a consistent member declaration order
     // https://typescript-eslint.io/rules/member-ordering/
@@ -304,5 +304,125 @@ module.exports = {
     // Enforce non-null assertions over explicit type casts
     // https://typescript-eslint.io/rules/non-nullable-type-assertion-style/
     "@typescript-eslint/non-nullable-type-assertion-style": "error",
+
+    // Require or disallow parameter properties in class constructors
+    // https://typescript-eslint.io/rules/parameter-properties
+    "@typescript-eslint/parameter-properties": ["error", { allow: [], prefer: "class-property" }],
+
+    // Enforce the use of as const over literal type
+    // https://typescript-eslint.io/rules/prefer-as-const/
+    "@typescript-eslint/prefer-as-const": "error",
+
+    // Require each enum member value to be explicitly initialized
+    // https://typescript-eslint.io/rules/prefer-enum-initializers/
+    "@typescript-eslint/prefer-enum-initializers": "error",
+
+    // Enforce the use of for-of loop over the standard for loop where possible
+    // https://typescript-eslint.io/rules/prefer-for-of/
+    "@typescript-eslint/prefer-for-of": "error",
+
+    // Enforce using function types instead of interfaces with call signatures
+    // https://typescript-eslint.io/rules/prefer-function-type/
+    "@typescript-eslint/prefer-function-type": "error",
+
+    // Enforce includes method over indexOf method
+    // https://typescript-eslint.io/rules/prefer-includes/
+    "@typescript-eslint/prefer-includes": "error",
+
+    // Require all enum members to be literal values
+    // https://typescript-eslint.io/rules/prefer-literal-enum-member/
+    "@typescript-eslint/prefer-literal-enum-member": "error",
+
+    // Require using namespace keyword over module keyword to declare custom TypeScript modules
+    // https://typescript-eslint.io/rules/prefer-namespace-keyword/
+    "@typescript-eslint/prefer-namespace-keyword": "error",
+
+    // Enforce using the nullish coalescing operator instead of logical chaining
+    // https://typescript-eslint.io/rules/prefer-nullish-coalescing/
+    "@typescript-eslint/prefer-nullish-coalescing": "off", // TODO: turn on ?
+
+    // Enforce using concise optional chain expressions instead of chained logical ands, negated logical ors, or empty objects
+    // https://typescript-eslint.io/rules/prefer-optional-chain/
+    "@typescript-eslint/prefer-optional-chain": "error",
+
+    // Require private members to be marked as readonly if they're never modified outside of the constructor
+    // https://typescript-eslint.io/rules/prefer-readonly/
+    "@typescript-eslint/prefer-readonly": "off",
+
+    // Require function parameters to be typed as readonly to prevent accidental mutation of inputs
+    // https://typescript-eslint.io/rules/prefer-readonly-parameter-types/
+    "@typescript-eslint/prefer-readonly-parameter-types": "off",
+
+    // Enforce using type parameter when calling Array#reduce instead of casting
+    // https://typescript-eslint.io/rules/prefer-reduce-type-parameter/
+    "@typescript-eslint/prefer-reduce-type-parameter": "error",
+
+    // Enforce RegExp#exec over String#match if no global flag is provided
+    // https://typescript-eslint.io/rules/prefer-regexp-exec/
+    "@typescript-eslint/prefer-regexp-exec": "error",
+
+    // Enforce that this is used when only this type is returned
+    // https://typescript-eslint.io/rules/prefer-return-this-type/
+    "@typescript-eslint/prefer-return-this-type": "error",
+
+    // Enforce using String#startsWith and String#endsWith over other equivalent methods of checking substrings
+    // https://typescript-eslint.io/rules/prefer-string-starts-ends-with/
+    "@typescript-eslint/prefer-string-starts-ends-with": "error",
+
+    // Enforce using @ts-expect-error over @ts-ignore
+    // https://typescript-eslint.io/rules/prefer-ts-expect-error/
+    "@typescript-eslint/prefer-ts-expect-error": "error",
+
+    // Require any function or method that returns a Promise to be marked async
+    // https://typescript-eslint.io/rules/promise-function-async/
+    "@typescript-eslint/promise-function-async": "off",
+
+    // Require Array#sort calls to always provide a compareFunction
+    // https://typescript-eslint.io/rules/require-array-sort-compare/
+    "@typescript-eslint/require-array-sort-compare": "error",
+
+    // Require both operands of addition to be the same type and be bigint, number, or string
+    // https://typescript-eslint.io/rules/restrict-plus-operands/
+    "@typescript-eslint/restrict-plus-operands": "error",
+
+    // Enforce template literal expressions to be of string type
+    // https://typescript-eslint.io/rules/restrict-template-expressions/
+    "@typescript-eslint/restrict-template-expressions": ["error", { allowNumber: true }],
+
+    // Enforce constituents of a type union/intersection to be sorted alphabetically
+    // https://typescript-eslint.io/rules/sort-type-constituents/
+    "@typescript-eslint/sort-type-constituents": "off",
+
+    // Enforce members of a type union/intersection to be sorted alphabetically
+    // https://typescript-eslint.io/rules/sort-type-union-intersection-members/
+    "@typescript-eslint/sort-type-union-intersection-members": "off", // Deprecated for sort-type-constituents
+
+    // Disallow certain types in boolean expressions
+    // https://typescript-eslint.io/rules/strict-boolean-expressions/
+    "@typescript-eslint/strict-boolean-expressions": "off",
+
+    // Require switch-case statements to be exhaustive with union type
+    // https://typescript-eslint.io/rules/switch-exhaustiveness-check/
+    "@typescript-eslint/switch-exhaustiveness-check": "error",
+
+    // Disallow certain triple slash directives in favor of ES6-style import declarations
+    // https://typescript-eslint.io/rules/triple-slash-reference/
+    "@typescript-eslint/triple-slash-reference": "error",
+
+    // Require consistent spacing around type annotations
+    // https://typescript-eslint.io/rules/type-annotation-spacing/
+    "@typescript-eslint/type-annotation-spacing": "off", // off: linter rule
+
+    // Require type annotations in certain places
+    // https://typescript-eslint.io/rules/typedef/
+    "@typescript-eslint/typedef": "off",
+
+    // Enforce unbound methods are called with their expected scope
+    // https://typescript-eslint.io/rules/unbound-method/
+    "@typescript-eslint/unbound-method": "error",
+
+    // Disallow two overloads that could be unified into one with a union or an optional/rest parameter
+    // https://typescript-eslint.io/rules/unified-signatures/
+    "@typescript-eslint/unified-signatures": "error",
   }
 }

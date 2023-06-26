@@ -2,6 +2,24 @@
 
 > Personal Eslint config (typescript)
 
+typescript-eslint: v5.60.0
+
+Typescript compilerOptions:
+
+```json
+{
+  "strict": true,
+}
+```
+or
+```json
+{
+  "noImplicitAny": true,
+  "strictNullChecks": true,
+}
+```
+
+
 ## Installation
 
 Install `@wardes/eslint-config-typescript`:
