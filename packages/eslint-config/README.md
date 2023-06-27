@@ -2,6 +2,14 @@
 
 > Personal Eslint config (javascript)
 
+> Prettier friendly !
+
+---
+eslint: v8.35.0
+
+eslint-config-prettier: v8.8.0
+
+---
 ## Installation
 
 Install `@wardes/eslint-config`:
