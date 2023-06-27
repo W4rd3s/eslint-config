@@ -2,8 +2,16 @@
 
 > Personal Eslint config (typescript)
 
+> Prettier friendly !
+
+---
+eslint: v8.35.0
+
+eslint-config-prettier: v8.8.0
+
 typescript-eslint: v5.60.0
 
+---
 Typescript compilerOptions:
 
 ```json
