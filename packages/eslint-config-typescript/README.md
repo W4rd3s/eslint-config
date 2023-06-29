@@ -5,14 +5,16 @@
 > Prettier friendly !
 
 ---
-eslint: v8.35.0
+<b><ins>Rules are based on:</ins></b>
 
-eslint-config-prettier: v8.8.0
+eslint: v8.35.0
 
 typescript-eslint: v5.60.0
 
+eslint-config-prettier: v8.8.0
+
 ---
-Typescript compilerOptions:
+<b><ins>Typescript compilerOptions:</ins></b>
 
 ```json
 {
@@ -32,15 +34,15 @@ or
 
 Install `@wardes/eslint-config-typescript`:
 ``` bash
-npm i -D eslint @wardes/eslint-config-typescript
+npm i -D eslint typescript @wardes/eslint-config-typescript
 ```
 
 ``` bash
-yarn add -D eslint @wardes/eslint-config-typescript
+yarn add -D eslint typescript @wardes/eslint-config-typescript
 ```
 
 ``` bash
-pnpm add -D eslint @wardes/eslint-config-typescript
+pnpm add -D eslint typescript @wardes/eslint-config-typescript
 ```
 
 Add the following to your eslint config:
