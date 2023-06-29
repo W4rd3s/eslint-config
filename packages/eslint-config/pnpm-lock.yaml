@@ -1,11 +1,15 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 dependencies:
   confusing-browser-globals:
     specifier: ^1.0.11
     version: 1.0.11
   eslint-plugin-import:
-    specifier: ^2.27.5
+    specifier: ^2.27.0
     version: 2.27.5(eslint@8.37.0)
 
 devDependencies:
