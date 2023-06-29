@@ -1,0 +1,32 @@
+{
+  "name": "@wardes/eslint-config-typescript",
+  "version": "1.0.0",
+  "description": "Personal ESLint config (typescript)",
+  "repository": "W4rd3s/eslint-config",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "typescript",
+    "ts"
+  ],
+  "author": "Wardes",
+  "license": "MIT",
+  "prettier": "@wardes/prettier-config",
+  "peerDependencies": {
+    "eslint": "^8.35.0",
+    "typescript": "*"
+  },
+  "devDependencies": {
+    "eslint": "^8.35.0",
+    "prettier": "^2.8.4",
+    "@wardes/prettier-config": "^1.0.4"
+  },
+  "dependencies": {
+    "@wardes/eslint-config": "^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0"
+  }
+}
