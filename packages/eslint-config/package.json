@@ -14,17 +14,16 @@
   "license": "MIT",
   "prettier": "@wardes/prettier-config",
   "peerDependencies": {
-    "eslint": "^8.35.0",
-    "eslint-plugin-import": "^2.27.0"
+    "eslint": "^8.35.0"
   },
   "devDependencies": {
-    "@types/eslint": "^8.37.0",
-    "@wardes/prettier-config": "^1.0.4",
     "eslint": "^8.37.0",
-    "prettier": "^2.8.7"
+    "@types/eslint": "^8.37.0",
+    "prettier": "^2.8.7",
+    "@wardes/prettier-config": "^1.0.4"
   },
   "dependencies": {
     "confusing-browser-globals": "^1.0.11",
-    "eslint-plugin-import": "^2.27.5"
+    "eslint-plugin-import": "^2.27.0"
   }
 }
