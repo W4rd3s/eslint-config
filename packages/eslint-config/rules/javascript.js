@@ -93,7 +93,7 @@ module.exports = {
 
     // Disallow duplicate module imports
     // https://eslint.org/docs/latest/rules/no-duplicate-imports
-    'no-duplicate-imports': 'error',
+    'no-duplicate-imports': 'off', // Deprecated in favor of import/no-duplicates
 
     // Disallow empty character classes in regular expressions
     // https://eslint.org/docs/latest/rules/no-empty-character-class
@@ -145,7 +145,7 @@ module.exports = {
 
     // Disallow new operators with the Symbol object
     // https://eslint.org/docs/latest/rules/no-new-symbol
-    /* Disable because duplicate with no-new-native-nonconstructor */
+    // Disable because duplicate with no-new-native-nonconstructor
     'no-new-symbol': 'off',
 
     // Disallow calling global object properties as functions
@@ -190,7 +190,7 @@ module.exports = {
 
     // Disallow confusing multiline expressions
     // https://eslint.org/docs/latest/rules/no-unexpected-multiline
-    'no-unexpected-multiline': 'error',
+    'no-unexpected-multiline': 'error', // potentially conflict with prettier
 
     // Disallow unmodified loop conditions
     // https://eslint.org/docs/latest/rules/no-unmodified-loop-condition
@@ -284,10 +284,6 @@ module.exports = {
     // Enforce consistent naming when capturing the current execution context
     // https://eslint.org/docs/latest/rules/consistent-this
     'consistent-this': 'off',
-
-    // Enforce consistent brace style for all control statements
-    // https://eslint.org/docs/latest/rules/curly
-    curly: ['error', 'multi-line'],
 
     // Require default cases in switch statements
     // https://eslint.org/docs/latest/rules/default-case
@@ -426,7 +422,7 @@ module.exports = {
     'no-confusing-arrow': [
       'error',
       {
-        allowParens: true,
+        allowParens: false, // Disabled, conflicts with prettier
       },
     ],
 
@@ -490,14 +486,6 @@ module.exports = {
     // Disallow unnecessary labels
     // https://eslint.org/docs/rules/no-extra-label
     'no-extra-label': 'error',
-
-    // Disallow unnecessary semicolons
-    // https://eslint.org/docs/rules/no-extra-semi
-    'no-extra-semi': 'error',
-
-    // Disallow leading or trailing decimal points in numeric literals
-    // https://eslint.org/docs/rules/no-floating-decimal
-    'no-floating-decimal': 'error',
 
     // Disallow assignments to native objects or read-only global variables
     // https://eslint.org/docs/rules/no-global-assign
@@ -862,7 +850,8 @@ module.exports = {
 
     // Require or disallow newlines around variable declarations
     // https://eslint.org/docs/rules/one-var-declaration-per-line
-    'one-var-declaration-per-line': ['error', 'always'],
+    // Disabled, covered by prettier
+    'one-var-declaration-per-line': 'off', // ['error', 'always'],
 
     // Require or disallow assignment operator shorthand where possible
     // https://eslint.org/docs/rules/operator-assignment
@@ -955,11 +944,12 @@ module.exports = {
 
     // Require quotes around object literal property names
     // https://eslint.org/docs/rules/quote-props
-    'quote-props': [
+    // Disabled, covered by prettier
+    'quote-props': 'off' /* [
       'error',
       'as-needed',
       { keywords: false, unnecessary: true, numbers: false },
-    ],
+    ],*/,
 
     // Enforce the consistent use of the radix argument when using parseInt()
     // https://eslint.org/docs/rules/radix

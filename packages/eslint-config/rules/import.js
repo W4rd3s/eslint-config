@@ -85,7 +85,6 @@ module.exports = {
 
     // Forbid CommonJS require calls and module.exports or exports.*
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-commonjs.md
-    // TODO: enable this rule on typescript ?
     'import/no-commonjs': 'off',
 
     // Forbid import statements with CommonJS module.exports
@@ -106,17 +105,14 @@ module.exports = {
 
     // Ensure a default export is present, given a default import
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/default.md
-    // TODO: disable this rule on typescript ?
     'import/default': 'error',
 
     // Ensure named imports correspond to a named export in the remote file
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/named.md
-    // TODO: disable this rule on typescript !
     'import/named': 'error',
 
     // Ensure imported namespaces contain dereferenced properties as they are dereferenced
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/namespace.md
-    // TODO: disable this rule on typescript ?
     'import/namespace': 'error',
 
     // Forbid import of modules using absolute paths
@@ -238,7 +234,6 @@ module.exports = {
 
     // Enforce a convention in module import order
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/order.md
-    // TODO: add [..., 'object', 'type'] for typescript
     'import/order': ['error', {groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index']}],
 
     // Prefer a default export if module exports a single name or multiple names

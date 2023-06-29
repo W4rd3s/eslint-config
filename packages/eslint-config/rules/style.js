@@ -4,33 +4,45 @@
 
 module.exports = {
   rules: {
+    // Enforce consistent brace style for all control statements
+    // https://eslint.org/docs/latest/rules/curly
+    // Disabled, covered by prettier
+    curly: 'off',
+
     // Enforce linebreaks after opening and before closing array brackets
     // https://eslint.org/docs/latest/rules/array-bracket-newline
-    'array-bracket-newline': ['error', 'consistent'],
+    // Disabled, covered by prettier
+    'array-bracket-newline': 'off', // ['error', 'consistent'],
 
     // Enforce consistent spacing inside array brackets
     // https://eslint.org/docs/latest/rules/array-bracket-spacing
-    'array-bracket-spacing': ['error', 'never'],
+    // Disabled, covered by prettier
+    'array-bracket-spacing': 'off', // ['error', 'never'],
 
     // Enforce line breaks after each array element
     // https://eslint.org/docs/latest/rules/array-element-newline
-    'array-element-newline': ['error', 'consistent'],
+    // Disabled, covered by prettier
+    'array-element-newline': 'off', // ['error', 'consistent'],
 
     // Require parentheses around arrow function arguments
     // https://eslint.org/docs/latest/rules/arrow-parens
-    'arrow-parens': ['error', 'always'],
+    // Disabled, covered by prettier
+    'arrow-parens': 'off', // ['error', 'always'],
 
     // Enforce consistent spacing before and after the arrow in arrow functions
     // https://eslint.org/docs/latest/rules/arrow-spacing
-    'arrow-spacing': ['error', { before: true, after: true }],
+    // Disabled, covered by prettier
+    'arrow-spacing': 'off', // ['error', { before: true, after: true }],
 
     // Disallow or enforce spaces inside of blocks after opening block and before closing block
     // https://eslint.org/docs/latest/rules/block-spacing
-    'block-spacing': ['error', 'always'],
+    // Disabled, covered by prettier
+    'block-spacing': 'off', //['error', 'always'],
 
     // Enforce consistent brace style for blocks
     // https://eslint.org/docs/latest/rules/brace-style
-    'brace-style': ['error', '1tbs', { allowSingleLine: true }],
+    // Disabled, covered by prettier
+    'brace-style': 'off', // ['error', '1tbs', { allowSingleLine: true }],
 
     // Require or disallow trailing commas
     // https://eslint.org/docs/latest/rules/comma-dangle
@@ -38,47 +50,58 @@ module.exports = {
 
     // Enforce consistent spacing before and after commas
     // https://eslint.org/docs/latest/rules/comma-spacing
-    'comma-spacing': ['error', { before: false, after: true }],
+    // Disabled, covered by prettier
+    'comma-spacing': 'off', // ['error', { before: false, after: true }],
 
     // Enforce consistent comma style
     // https://eslint.org/docs/latest/rules/comma-style
-    'comma-style': ['error', 'last'],
+    // Disabled, covered by prettier
+    'comma-style': 'off', // ['error', 'last'],
 
     // Enforce consistent spacing inside computed property brackets
     // https://eslint.org/docs/latest/rules/computed-property-spacing
-    'computed-property-spacing': ['error', 'never'],
+    // Disabled, covered by prettier
+    'computed-property-spacing': 'off', // ['error', 'never'],
 
     // Enforce consistent newlines before and after dots
     // https://eslint.org/docs/latest/rules/dot-location
-    'dot-location': ['error', 'property'],
+    // Disabled, covered by prettier
+    'dot-location': 'off', // ['error', 'property'],
 
     // Require or disallow newline at the end of files
     // https://eslint.org/docs/latest/rules/eol-last
-    'eol-last': ['error', 'always'],
+    // Disabled, covered by prettier
+    'eol-last': 'off', // ['error', 'always'],
 
     // Require or disallow spacing between function identifiers and their invocations
     // https://eslint.org/docs/latest/rules/func-call-spacing
-    'func-call-spacing': ['error', 'never'],
+    // Disabled, covered by prettier
+    'func-call-spacing': 'off', // ['error', 'never'],
 
     // Enforce line breaks between arguments of a function call
     // https://eslint.org/docs/latest/rules/function-call-argument-newline
-    'function-call-argument-newline': ['error', 'consistent'],
+    // Disabled, covered by prettier
+    'function-call-argument-newline': 'off', // ['error', 'consistent'],
 
     // Enforce consistent line breaks inside function parentheses
     // https://eslint.org/docs/latest/rules/function-paren-newline
-    'function-paren-newline': ['error', 'consistent'],
+    // Disabled, covered by prettier
+    'function-paren-newline': 'off', // ['error', 'consistent'],
 
     // Enforce consistent spacing around * operators in generator functions
     // https://eslint.org/docs/latest/rules/generator-star-spacing
-    'generator-star-spacing': ['error', { before: false, after: true }],
+    // Disabled, covered by prettier
+    'generator-star-spacing': 'off', // ['error', { before: false, after: true }],
 
     // Enforce the location of arrow function bodies
     // https://eslint.org/docs/latest/rules/implicit-arrow-linebreak
-    'implicit-arrow-linebreak': ['error', 'beside'],
+    // Disabled, covered by prettier
+    'implicit-arrow-linebreak': 'off', // ['error', 'beside'],
 
     // Enforce consistent indentation
     // https://eslint.org/docs/latest/rules/indent
-    indent: [
+    // Disabled, covered by prettier
+    indent: 'off' /* [
       'error',
       2,
       {
@@ -122,19 +145,22 @@ module.exports = {
         ],
         ignoreComments: false,
       },
-    ],
+    ],*/,
 
     // Enforce the consistent use of either double or single quotes in JSX attributes
     // https://eslint.org/docs/latest/rules/jsx-quotes
-    'jsx-quotes': ['error', 'prefer-double'],
+    // Disabled, covered by prettier
+    'jsx-quotes': 'off', // ['error', 'prefer-double'],
 
     // Enforce consistent spacing between keys and values in object literal properties
     // https://eslint.org/docs/latest/rules/key-spacing
-    'key-spacing': ['error', { beforeColon: false, afterColon: true }],
+    // Disabled, covered by prettier
+    'key-spacing': 'off', // 'error', { beforeColon: false, afterColon: true }],
 
     // Enforce consistent spacing before and after keywords
     // https://eslint.org/docs/latest/rules/keyword-spacing
-    'keyword-spacing': [
+    // Disabled, covered by prettier
+    'keyword-spacing': 'off' /* [
       'error',
       {
         before: true,
@@ -145,7 +171,7 @@ module.exports = {
           case: { after: true },
         },
       },
-    ],
+    ],*/,
 
     // Enforce position of line comments
     // https://eslint.org/docs/latest/rules/line-comment-position
@@ -153,10 +179,12 @@ module.exports = {
 
     // Enforce consistent linebreak style
     // https://eslint.org/docs/latest/rules/linebreak-style
-    'linebreak-style': ['error', 'unix'],
+    // Disabled, covered by prettier
+    'linebreak-style': 'off', // ['error', 'unix'],
 
     // Require empty lines around comments
     // https://eslint.org/docs/latest/rules/lines-around-comment
+    // Disabled, covered by prettier
     'lines-around-comment': 'off',
 
     // Require or disallow an empty line between class members
@@ -169,7 +197,8 @@ module.exports = {
 
     // Enforce a maximum line length
     // https://eslint.org/docs/latest/rules/max-len
-    'max-len': [
+    // Disabled, covered by prettier
+    'max-len': 'off' /* [
       'error',
       {
         code: 100,
@@ -180,7 +209,7 @@ module.exports = {
         ignoreStrings: true,
         ignoreTemplateLiterals: true,
       },
-    ],
+    ],*/,
 
     // Enforce a maximum number of statements allowed per line
     // https://eslint.org/docs/latest/rules/max-statements-per-line
@@ -188,20 +217,24 @@ module.exports = {
 
     // Enforce newlines between operands of ternary expressions
     // https://eslint.org/docs/latest/rules/multiline-ternary
-    'multiline-ternary': ['error', 'always-multiline'],
+    // Disabled, covered by prettier
+    'multiline-ternary': 'off', // ['error', 'always-multiline'],
 
     // Enforce or disallow parentheses when invoking a constructor with no arguments
     // https://eslint.org/docs/latest/rules/new-parens
-    'new-parens': ['error', 'always'],
+    // Disabled, covered by prettier
+    'new-parens': 'off', // ['error', 'always'],
 
     // Require a newline after each call in a method chain
     // https://eslint.org/docs/latest/rules/newline-per-chained-call
     // ignoreChainWithDepth: 4 is excessive ?
-    'newline-per-chained-call': ['error', { ignoreChainWithDepth: 4 }],
+    // Disabled, covered by prettier
+    'newline-per-chained-call': 'off', // ['error', { ignoreChainWithDepth: 4 }],
 
     // Disallow unnecessary parentheses
     // https://eslint.org/docs/latest/rules/no-extra-parens
-    'no-extra-parens': [
+    // Disabled, covered by prettier
+    'no-extra-parens': 'off' /*[
       'off',
       'all',
       {
@@ -211,24 +244,36 @@ module.exports = {
         ignoreJSX: 'all', // delegate to eslint-plugin-react
         enforceForArrowConditionals: false,
       },
-    ],
+    ],*/,
+
+    // Disallow unnecessary semicolons
+    // https://eslint.org/docs/rules/no-extra-semi
+    // 'no-extra-semi': 'error',
+    'no-extra-semi': 'off', // 'error',
+
+    // Disallow leading or trailing decimal points in numeric literals
+    // https://eslint.org/docs/rules/no-floating-decimal
+    'no-floating-decimal': 'off', // 'error',
 
     // Disallow mixed spaces and tabs for indentation
     // https://eslint.org/docs/latest/rules/no-mixed-spaces-and-tabs
-    'no-mixed-spaces-and-tabs': ['error', 'smart-tabs'],
+    // Disabled, covered by prettier
+    'no-mixed-spaces-and-tabs': 'off', // ['error', 'smart-tabs'],
 
     // Disallow multiple spaces
     // https://eslint.org/docs/latest/rules/no-multi-spaces
-    'no-multi-spaces': [
+    // Disabled, covered by prettier
+    'no-multi-spaces': 'off' /* [
       'error',
       {
         ignoreEOLComments: false,
       },
-    ],
+    ],*/,
 
     // Disallow multiple empty lines
     // https://eslint.org/docs/latest/rules/no-multiple-empty-lines
-    'no-multiple-empty-lines': ['error', { max: 2, maxEOF: 1 }],
+    // Disabled, covered by prettier
+    'no-multiple-empty-lines': 'off', // ['error', { max: 2, maxEOF: 1 }],
 
     // Disallow all tabs
     // https://eslint.org/docs/latest/rules/no-tabs
@@ -236,25 +281,29 @@ module.exports = {
 
     // Disallow trailing whitespace at the end of lines
     // https://eslint.org/docs/latest/rules/no-trailing-spaces
-    'no-trailing-spaces': [
+    // Disabled, covered by prettier
+    'no-trailing-spaces': 'off' /* [
       'error',
       {
         skipBlankLines: false,
         ignoreComments: false,
       },
-    ],
+    ],*/,
 
     // Disallow whitespace before properties
     // https://eslint.org/docs/latest/rules/no-whitespace-before-property
-    'no-whitespace-before-property': 'error',
+    // Disabled, covered by prettier
+    'no-whitespace-before-property': 'off', // 'error',
 
     // Enforce the location of single-line statements
     // https://eslint.org/docs/latest/rules/nonblock-statement-body-position
-    'nonblock-statement-body-position': ['error', 'beside', { overrides: {} }],
+    // Disabled, covered by prettier
+    'nonblock-statement-body-position': 'off', // ['error', 'beside', { overrides: {} }],
 
     // Enforce consistent line breaks after opening and before closing braces
     // https://eslint.org/docs/latest/rules/object-curly-newline
-    'object-curly-newline': [
+    // Disabled, covered by prettier
+    'object-curly-newline': 'off' /* [
       'error',
       {
         ObjectExpression: {
@@ -274,28 +323,32 @@ module.exports = {
           consistent: true,
         },
       },
-    ],
+    ],*/,
 
     // Enforce consistent spacing inside braces
     // https://eslint.org/docs/latest/rules/object-curly-spacing
-    'object-curly-spacing': ['error', 'always'],
+    // Disabled, covered by prettier
+    'object-curly-spacing': 'off', // ['error', 'always'],
 
     // Enforce placing object properties on separate lines
     // https://eslint.org/docs/latest/rules/object-property-newline
-    'object-property-newline': [
+    // Disabled, covered by prettier
+    'object-property-newline': 'off' /* [
       'error',
       {
         allowAllPropertiesOnSameLine: true,
       },
-    ],
+    ],*/,
 
     // Enforce consistent linebreak style for operators
     // https://eslint.org/docs/latest/rules/operator-linebreak
-    'operator-linebreak': ['error', 'before', { overrides: { '=': 'none' } }],
+    // Disabled, covered by prettier
+    'operator-linebreak': 'off', // ['error', 'before', { overrides: { '=': 'none' } }],
 
     // Require or disallow padding within blocks
     // https://eslint.org/docs/latest/rules/padded-blocks
-    'padded-blocks': ['error', 'never'],
+    // Disabled, covered by prettier
+    'padded-blocks': 'off', // ['error', 'never'],
 
     // Require or disallow padding lines between statements
     // https://eslint.org/docs/latest/rules/padding-line-between-statements
@@ -303,97 +356,114 @@ module.exports = {
 
     // Enforce the consistent use of either backticks, double, or single quotes
     // https://eslint.org/docs/latest/rules/quotes
-    quotes: [
+    // Disabled, covered by prettier
+    quotes: 'off' /* [
       'error',
       'single',
       {
         avoidEscape: true,
         allowTemplateLiterals: true,
       },
-    ],
+    ],*/,
 
     // Enforce spacing between rest and spread operators and their expressions
     // https://eslint.org/docs/latest/rules/rest-spread-spacing
-    'rest-spread-spacing': ['error', 'never'],
+    // Disabled, covered by prettier
+    'rest-spread-spacing': 'off', // ['error', 'never'],
 
     // Require or disallow semicolons instead of ASI
     // https://eslint.org/docs/latest/rules/semi
-    semi: ['error', 'always'],
+    // Disabled, covered by prettier
+    semi: 'off', // ['error', 'always'],
 
     // Enforce consistent spacing before and after semicolons
     // https://eslint.org/docs/latest/rules/semi-spacing
-    'semi-spacing': [
+    // Disabled, covered by prettier
+    'semi-spacing': 'off' /* [
       'error',
       {
         before: false,
         after: true,
       },
-    ],
+    ],*/,
 
     // Enforce location of semicolons
     // https://eslint.org/docs/latest/rules/semi-style
-    'semi-style': ['error', 'last'],
+    // Disabled, covered by prettier
+    'semi-style': 'off', // ['error', 'last'],
 
     // Enforce consistent spacing before blocks
     // https://eslint.org/docs/latest/rules/space-before-blocks
-    'space-before-blocks': ['error', 'always'],
+    // Disabled, covered by prettier
+    'space-before-blocks': 'off', // ['error', 'always'],
 
     // Enforce consistent spacing before function definition opening parenthesis
     // https://eslint.org/docs/latest/rules/space-before-function-paren
-    'space-before-function-paren': [
+    // Disabled, covered by prettier
+    'space-before-function-paren': 'off' /* [
       'error',
       {
         anonymous: 'always',
         named: 'never',
         asyncArrow: 'always',
       },
-    ],
+    ],*/,
 
     // Enforce consistent spacing inside parentheses
     // https://eslint.org/docs/latest/rules/space-in-parens
-    'space-in-parens': ['error', 'never'],
+    // Disabled, covered by prettier
+    'space-in-parens': 'off', // ['error', 'never'],
 
     // Require spacing around infix operators
     // https://eslint.org/docs/latest/rules/space-infix-ops
-    'space-infix-ops': 'error',
+    // Disabled, covered by prettier
+    'space-infix-ops': 'off', // 'error',
 
     // Enforce consistent spacing before or after unary operators
     // https://eslint.org/docs/latest/rules/space-unary-ops
-    'space-unary-ops': [
+    // Disabled, covered by prettier
+    'space-unary-ops': 'off' /* [
       'error',
       {
         words: true,
         nonwords: false,
         overrides: {},
       },
-    ],
+    ],*/,
 
     // Enforce spacing around colons of switch statements
     // https://eslint.org/docs/rules/switch-colon-spacing
-    'switch-colon-spacing': ['error', { after: true, before: false }],
+    // Disabled, covered by prettier
+    'switch-colon-spacing': 'off', // ['error', { after: true, before: false }],
 
     // Require or disallow spacing around embedded expressions of template strings
     // https://eslint.org/docs/rules/template-curly-spacing
-    'template-curly-spacing': ['error', 'never'],
+    // Disabled, covered by prettier
+    'template-curly-spacing': 'off', // ['error', 'never'],
 
     // Require or disallow spacing between template tags and their literals
     // https://eslint.org/docs/rules/template-tag-spacing
-    'template-tag-spacing': ['error', 'never'],
+    // Disabled, covered by prettier
+    'template-tag-spacing': 'off', // ['error', 'never'],
 
     // Require or disallow Unicode byte order mark (BOM)
     // https://eslint.org/docs/rules/unicode-bom
-    'unicode-bom': ['error', 'never'],
+    // Disabled, covered by prettier
+    'unicode-bom': 'off', // ['error', 'never'],
 
     // Require parentheses around immediate function invocations
     // https://eslint.org/docs/rules/wrap-iife
-    'wrap-iife': ['error', 'outside', { functionPrototypeMethods: false }],
+    // Disabled, covered by prettier
+    'wrap-iife': 'off', // ['error', 'outside', { functionPrototypeMethods: false }],
 
     // Require parenthesis around regex literals
     // https://eslint.org/docs/rules/wrap-regex
-    'wrap-regex': 'error',
+    // Disabled, covered by prettier
+    'wrap-regex': 'off', // 'error',
 
     // Require or disallow spacing around the * in yield* expressions
     // https://eslint.org/docs/rules/yield-star-spacing
-    'yield-star-spacing': ['error', 'after'],
+    // Disabled, covered by prettier
+    'yield-star-spacing': 'off', // ['error', 'after'],
   },
 };
