@@ -12,8 +12,8 @@ dependencies:
     specifier: ^5.60.1
     version: 5.60.1(eslint@8.43.0)(typescript@5.1.6)
   '@wardes/eslint-config':
-    specifier: ^1.0.6
-    version: 1.0.6(@typescript-eslint/parser@5.60.1)(eslint@8.43.0)
+    specifier: ^1.0.7
+    version: 1.0.7(@typescript-eslint/parser@5.60.1)(eslint@8.43.0)
   typescript:
     specifier: '*'
     version: 5.1.6
@@ -245,8 +245,8 @@ packages:
       eslint-visitor-keys: 3.4.1
     dev: false
 
-  /@wardes/eslint-config@1.0.6(@typescript-eslint/parser@5.60.1)(eslint@8.43.0):
-    resolution: {integrity: sha512-ydqfQh2Gj6aKwBa8OQS3XpehgMm8itl84RFys2Knnp6Bu+gGfpKv6oXJZFXMKAjQVCxFj57J7KSci5Nt7FssGg==}
+  /@wardes/eslint-config@1.0.7(@typescript-eslint/parser@5.60.1)(eslint@8.43.0):
+    resolution: {integrity: sha512-6hD0210DKrqo38FHBe8bnW90YWa6ddF7ItTu0fr/pRu+CEW2qPo7++4lFWTVNIDXfiN5HC2NO2qDXMSLFMwKVQ==}
     peerDependencies:
       eslint: ^8.35.0
     dependencies:
