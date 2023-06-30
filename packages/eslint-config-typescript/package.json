@@ -1,6 +1,6 @@
 {
   "name": "@wardes/eslint-config-typescript",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Personal ESLint config (typescript)",
   "repository": "W4rd3s/eslint-config",
   "main": "index.js",
@@ -27,6 +27,6 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
-    "@wardes/eslint-config": "^1.0.6"
+    "@wardes/eslint-config": "^1.0.7"
   }
 }
