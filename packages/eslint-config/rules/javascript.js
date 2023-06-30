@@ -391,7 +391,7 @@ module.exports = {
      * Enforce or disallow capitalization of the first letter of a comment
      * https://eslint.org/docs/latest/rules/capitalized-comments
      */
-    'capitalized-comments': ["error", "always"],
+    'capitalized-comments': "off",
 
     /*
      * Enforce that class methods utilize this
