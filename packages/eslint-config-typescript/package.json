@@ -20,13 +20,13 @@
     "typescript": "*"
   },
   "devDependencies": {
-    "eslint": "^8.35.0",
-    "prettier": "^2.8.4",
-    "@wardes/prettier-config": "^1.0.4"
+    "@wardes/prettier-config": "^1.0.4",
+    "eslint": "^8.43.0",
+    "prettier": "^2.8.8"
   },
   "dependencies": {
-    "@wardes/eslint-config": "^1.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.60.0",
-    "@typescript-eslint/parser": "^5.60.0"
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@typescript-eslint/parser": "^5.60.1",
+    "@wardes/eslint-config": "^1.0.6"
   }
 }

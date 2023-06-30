@@ -35,33 +35,36 @@ module.exports = {
      * Forbid the use of extraneous packages
      * https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-extraneous-dependencies.md
      */
-    'import/no-extraneous-dependencies': ['error', {
-      devDependencies: [
-        'test/**', // Tape, common npm pattern
-        'tests/**', // Also common npm pattern
-        'spec/**', // Mocha, rspec-like pattern
-        '**/__tests__/**', // Jest pattern
-        '**/__mocks__/**', // Jest pattern
-        'test.{js,jsx}', // Repos with a single test file
-        'test-*.{js,jsx}', // Repos with multiple top-level test files
-        '**/*{.,_}{test,spec}.{js,jsx}', // Tests where the extension or filename suffix denotes that it is a test
-        '**/jest.config.js', // Jest config
-        '**/jest.setup.js', // Jest setup
-        '**/vue.config.js', // Vue-cli config
-        '**/webpack.config.js', // Webpack config
-        '**/webpack.config.*.js', // Webpack config
-        '**/rollup.config.js', // Rollup config
-        '**/rollup.config.*.js', // Rollup config
-        '**/gulpfile.js', // Gulp config
-        '**/gulpfile.*.js', // Gulp config
-        '**/Gruntfile{,.js}', // Grunt config
-        '**/protractor.conf.js', // Protractor config
-        '**/protractor.conf.*.js', // Protractor config
-        '**/karma.conf.js', // Karma config
-        '**/.eslintrc.js', // eslint config
-      ],
-      optionalDependencies: false,
-    }],
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: [
+          'test/**', // Tape, common npm pattern
+          'tests/**', // Also common npm pattern
+          'spec/**', // Mocha, rspec-like pattern
+          '**/__tests__/**', // Jest pattern
+          '**/__mocks__/**', // Jest pattern
+          'test.{js,jsx}', // Repos with a single test file
+          'test-*.{js,jsx}', // Repos with multiple top-level test files
+          '**/*{.,_}{test,spec}.{js,jsx}', // Tests where the extension or filename suffix denotes that it is a test
+          '**/jest.config.js', // Jest config
+          '**/jest.setup.js', // Jest setup
+          '**/vue.config.js', // Vue-cli config
+          '**/webpack.config.js', // Webpack config
+          '**/webpack.config.*.js', // Webpack config
+          '**/rollup.config.js', // Rollup config
+          '**/rollup.config.*.js', // Rollup config
+          '**/gulpfile.js', // Gulp config
+          '**/gulpfile.*.js', // Gulp config
+          '**/Gruntfile{,.js}', // Grunt config
+          '**/protractor.conf.js', // Protractor config
+          '**/protractor.conf.*.js', // Protractor config
+          '**/karma.conf.js', // Karma config
+          '**/.eslintrc.js', // eslint config
+        ],
+        optionalDependencies: false,
+      },
+    ],
 
     /*
      * Forbids the use of mutable exports with var or let
@@ -85,11 +88,14 @@ module.exports = {
      * Forbid modules without exports, or exports without matching import in another module.
      * https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-unused-modules.md
      */
-    'import/no-unused-modules': ['error', {
-      // IgnoreExports: [],
-      missingExports: true,
-      unusedExports: true,
-    }],
+    'import/no-unused-modules': [
+      'error',
+      {
+        // IgnoreExports: [],
+        missingExports: true,
+        unusedExports: true,
+      },
+    ],
 
     /// /////////////////
     /* Module systems */
@@ -239,11 +245,15 @@ module.exports = {
      * Ensure consistent use of file extension within the import path
      * https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/extensions.md
      */
-    'import/extensions': ['error', 'ignorePackages', {
-      js: 'never',
-      mjs: 'never',
-      jsx: 'never',
-    }],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        mjs: 'never',
+        jsx: 'never',
+      },
+    ],
 
     /*
      * Ensure all imports appear before other statements
@@ -274,7 +284,10 @@ module.exports = {
      * Enforce a newline after import statements
      * https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/newline-after-import.md
      */
-    'import/newline-after-import': ['error', { count: 1, considerComments: true }],
+    'import/newline-after-import': [
+      'error',
+      { count: 1, considerComments: true },
+    ],
 
     /*
      * Forbid anonymous values as default exports
@@ -322,7 +335,19 @@ module.exports = {
      * Enforce a convention in module import order
      * https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/order.md
      */
-    'import/order': ['error', {groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index']}],
+    'import/order': [
+      'error',
+      {
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          'index',
+        ],
+      },
+    ],
 
     /*
      * Prefer a default export if module exports a single name or multiple names
