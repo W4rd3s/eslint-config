@@ -1,0 +1,17 @@
+{
+  "name": "eslint-config-react",
+  "version": "1.0.0",
+  "description": "Personal ESLint config (react)",
+  "repository": "W4rd3s/eslint-config",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "react",
+    "reactjs"
+  ],
+  "author": "Wardes",
+  "license": "MIT"
+}
