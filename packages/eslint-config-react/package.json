@@ -13,5 +13,18 @@
     "reactjs"
   ],
   "author": "Wardes",
-  "license": "MIT"
+  "license": "MIT",
+  "prettier": "@wardes/prettier-config",
+  "peerDependencies": {
+    "eslint": "^8.35.0"
+  },
+  "devDependencies": {
+    "@wardes/prettier-config": "^1.0.4",
+    "eslint": "^8.43.0",
+    "prettier": "^2.8.8"
+  },
+  "dependencies": {
+    "eslint-plugin-react": "^7.32.2",
+    "@wardes/eslint-config": "^1.0.7"
+  }
 }
