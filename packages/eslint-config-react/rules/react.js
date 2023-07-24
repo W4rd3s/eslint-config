@@ -239,8 +239,153 @@ module.exports = {
     /*
      * Disallows JSX context provider values from taking values that will cause needless rerenders
      * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-constructed-context-values.md
-     * TODO: idk what this is
      */
     'react/jsx-no-constructed-context-values': 'error',
+
+    /*
+     * Disallow duplicate properties in JSX
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-duplicate-props.md
+     */
+    'react/jsx-no-duplicate-props': 'error',
+
+    /*
+     * Disallow problematic leaked values from being rendered
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-leaked-render.md
+     */
+    'react/jsx-no-leaked-render': 'error',
+
+    /*
+     * Disallow usage of string literals in JSX
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-literals.md
+     */
+    'react/jsx-no-literals': 'off',
+
+    /*
+     * Disallow usage of javascript: URLs
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-script-url.md
+     */
+    'react/jsx-no-script-url': 'error',
+
+    /*
+     * Disallow target="_blank" attribute without rel="noreferrer"
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md
+     */
+    'react/jsx-no-target-blank': 'error',
+
+    /*
+     * Disallow undeclared variables in JSX
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-undef.md
+     */
+    'react/jsx-no-undef': ['error', { allowGlobals: true }],
+
+    /*
+     * Disallow unnecessary fragments
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-useless-fragment.md
+     */
+    'react/jsx-no-useless-fragment': 'error',
+
+    /*
+     * Require one JSX element per line
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-one-expression-per-line.md
+     * Disabled, covered by prettier
+     */
+    'react/jsx-one-expression-per-line': 'off',
+
+    /*
+     * Enforce PascalCase for user-defined JSX components
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md
+     */
+    'react/jsx-pascal-case': 'error',
+
+    /*
+     * Disallow multiple spaces between inline JSX props
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-multi-spaces.md
+     * Disabled, covered by prettier
+     */
+    'react/jsx-props-no-multi-spaces': 'off',
+
+    /*
+     * Disallow JSX prop spreading
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-spreading.md
+     */
+    'react/jsx-props-no-spreading': [
+      'error',
+      {
+        html: 'enforce',
+        custom: 'enforce',
+        explicitSpread: 'ignore',
+        exceptions: [],
+      },
+    ],
+
+    /*
+     * Enforce props alphabetical sorting
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-sort-props.md
+     * TODO: activate ?
+     */
+    'react/jsx-sort-props': 'off',
+
+    /*
+     * Enforce whitespace in and around the JSX opening and closing brackets
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-tag-spacing.md
+     * Disabled, covered by prettier
+     */
+    'react/jsx-tag-spacing': 'off',
+
+    /*
+     * Disallow React to be incorrectly marked as unused
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-uses-react.md
+     * Disabled, no longer needed with React 17
+     */
+    'react/jsx-uses-react': 'off',
+
+    /*
+     * Disallow missing parentheses around multiline JSX
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-wrap-multilines.md
+     * Disabled, covered by prettier
+     */
+    'react/jsx-wrap-multilines': 'off',
+
+    /*
+     * Disallow when this.state is accessed within setState
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-access-state-in-setstate.md
+     */
+    'react/no-access-state-in-setstate': 'error',
+
+    /*
+     * Disallow adjacent inline elements not separated by whitespace.
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-adjacent-inline-elements.md
+     */
+    'react/no-adjacent-inline-elements': 'error',
+
+    /*
+     * Disallow usage of Array index in keys
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-array-index-key.md
+     */
+    'react/no-array-index-key': 'error',
+
+    /*
+     * Lifecycle methods should be methods on the prototype, not class fields
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-arrow-function-lifecycle.md
+     */
+    'react/no-arrow-function-lifecycle': 'error',
+
+    /*
+     * Disallow passing of children as props
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-children-prop.md
+     */
+    'react/no-children-prop': 'error',
+
+    /*
+     * Disallow usage of dangerous JSX properties
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-danger.md
+     */
+    'react/no-danger': 'error',
+
+    /*
+     * Disallow when a DOM element is using both children and dangerouslySetInnerHTML
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-danger-with-children.md
+     */
+    'react/no-danger-with-children': 'error',
   },
 };
