@@ -387,5 +387,252 @@ module.exports = {
      * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-danger-with-children.md
      */
     'react/no-danger-with-children': 'error',
+
+    /*
+     * Disallow usage of deprecated methods
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-deprecated.md
+     */
+    'react/no-deprecated': 'error',
+
+    /*
+     * Disallow usage of setState in componentDidMount
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-did-mount-set-state.md
+     */
+    'react/no-did-mount-set-state': 'error',
+
+    /*
+     * Disallow usage of setState in componentDidUpdate
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-did-update-set-state.md
+     */
+    'react/no-did-update-set-state': 'error',
+
+    /*
+     * Disallow direct mutation of this.state
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-direct-mutation-state.md
+     */
+    'react/no-direct-mutation-state': 'error',
+
+    /*
+     * Disallow usage of findDOMNode
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-find-dom-node.md
+     */
+    'react/no-find-dom-node': 'error',
+
+    /*
+     * Disallow usage of invalid attributes
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-invalid-html-attribute.md
+     */
+    'no-invalid-html-attributes': 'off',
+
+    /*
+     * Disallow usage of isMounted
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-is-mounted.md
+     */
+    'react/no-is-mounted': 'error',
+
+    /*
+     * Disallow multiple component definition per file
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md
+     */
+    'react/no-multi-comp': ['error', { ignoreStateless: true }],
+
+    /*
+     * Enforce that namespaces are not used in React elements
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-namespace.md
+     */
+    'react/no-namespace': 'error',
+
+    /*
+     * Disallow usage of referential-type variables as default param in functional component
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-object-type-as-default-prop.md
+     */
+    'react/no-object-type-as-default-prop': 'error',
+
+    /*
+     * Disallow usage of shouldComponentUpdate when extending React.PureComponent
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-redundant-should-component-update.md
+     */
+    'react/no-redundant-should-component-update': 'error',
+
+    /*
+     * Disallow usage of the return value of ReactDOM.render
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-render-return-value.md
+     */
+    'react/no-render-return-value': 'error',
+
+    /*
+     * Disallow usage of setState
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-set-state.md
+     */
+    'react/no-set-state': 'off',
+
+    /*
+     * Disallow using string references
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-string-refs.md
+     */
+    'react/no-string-refs': 'error',
+
+    /*
+     * Disallow this from being used in stateless functional components
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-this-in-sfc.md
+     */
+    'react/no-this-in-sfc': 'error',
+
+    /*
+     * Disallow common typos
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-typos.md
+     * TODO: turn off in typescript ?
+     */
+    'react/no-typos': 'error',
+
+    /*
+     *	Disallow unescaped HTML entities from appearing in markup
+     *  https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unescaped-entities.md
+     */
+    'react/no-unescaped-entities': 'error',
+
+    /*
+     * Disallow usage of unknown DOM property
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unknown-property.md
+     */
+    'react/no-unknown-property': 'error',
+
+    /*
+     * Disallow usage of unsafe lifecycle methods
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unsafe.md
+     */
+    'react/no-unsafe': ['error', { checkAliases: true }],
+
+    /*
+     * Disallow creating unstable components inside components
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unstable-nested-components.md
+     */
+    'react/no-unstable-nested-components': 'TODO',
+
+    /*
+     * Disallow declaring unused methods of component class
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unused-class-component-methods.md
+     */
+    'react/no-unused-class-component-methods': 'TODO',
+
+    /*
+     * Disallow definitions of unused propTypes
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unused-prop-types.md
+     */
+    'react/no-unused-prop-types': 'TODO',
+
+    /*
+     * Disallow definitions of unused state
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unused-state.md
+     */
+    'react/no-unused-state': 'TODO',
+
+    /*
+     * Disallow usage of setState in componentWillUpdate
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-will-update-set-state.md
+     */
+    'react/no-will-update-set-state': 'TODO',
+
+    /*
+     * Enforce ES5 or ES6 class for React Components
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md
+     */
+    'react/prefer-es6-class': 'TODO',
+
+    /*
+     * Prefer exact proptype definitions
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prefer-exact-props.md
+     */
+    'react/prefer-exact-props': 'TODO',
+
+    /*
+     * Enforce that props are read-only
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prefer-read-only-props.md
+     */
+    'react/prefer-read-only-props': 'TODO',
+
+    /*
+     * Enforce stateless components to be written as a pure function
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md
+     */
+    'react/prefer-stateless-function': 'TODO',
+
+    /*
+     * Disallow missing props validation in a React component definition
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prop-types.md
+     */
+    'react/prop-types': 'TODO',
+
+    /*
+     * Disallow missing React when using JSX
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
+     */
+    'react/react-in-jsx-scope': 'TODO',
+
+    /*
+     * Enforce a defaultProps definition for every prop that is not a required prop
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/require-default-props.md
+     */
+    'react/require-default-props': 'TODO',
+
+    /*
+     * Enforce React components to have a shouldComponentUpdate method
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/require-optimization.md
+     */
+    'react/require-optimization': 'TODO',
+
+    /*
+     * Enforce ES5 or ES6 class for returning value in render function
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/require-render-return.md
+     */
+    'react/require-render-return': 'TODO',
+
+    /*
+     * Disallow extra closing tags for components without children
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md
+     */
+    'react/self-closing-comp': 'TODO',
+
+    /*
+     * Enforce component methods order
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/sort-comp.md
+     */
+    'react/sort-comp': 'TODO',
+
+    /*
+     * Enforce defaultProps declarations alphabetical sorting
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/sort-default-props.md
+     */
+    'react/sort-default-props': 'TODO',
+
+    /*
+     * Enforce propTypes declarations alphabetical sorting
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/sort-prop-types.md
+     */
+    'react/sort-prop-types': 'TODO',
+
+    /*
+     * Enforce class component state initialization style
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/state-in-constructor.md
+     */
+    'react/state-in-constructor': 'TODO',
+
+    /*
+     * Enforces where React component static properties should be positioned
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/static-property-placement.md
+     */
+    'react/static-property-placement': 'TODO',
+
+    /*
+     * Enforce style prop value is an object
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/style-prop-object.md
+     */
+    'react/style-prop-object': 'TODO',
+
+    /*
+     * Disallow void DOM elements (e.g. <img />, <br />) from receiving children
+     * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/void-dom-elements-no-children.md
+     */
+    'react/void-dom-elements-no-children': 'TODO',
   },
 };
