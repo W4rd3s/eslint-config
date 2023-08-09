@@ -253,7 +253,7 @@ module.exports = {
      * Enforce the use of top-level import type qualifier when an import only has specifiers with inline type qualifiers
      * https://typescript-eslint.io/rules/no-import-type-side-effects/
      */
-    '@typescript-eslint/no-import-side-effects': 'error',
+    '@typescript-eslint/no-import-type-side-effects': 'error',
 
     /*
      * Disallow explicit type declarations for variables or parameters initialized to a number, string, or boolean
@@ -325,7 +325,7 @@ module.exports = {
      * Disallow members of unions and intersections that do nothing or override type information
      * https://typescript-eslint.io/rules/no-redundant-type-constituents/
      */
-    '@typescript-eslint/no-redundant-type-arguments': 'error',
+    '@typescript-eslint/no-redundant-type-constituents': 'error',
 
     /*
      * Disallow invocation of require()
