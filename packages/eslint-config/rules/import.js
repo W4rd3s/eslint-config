@@ -87,9 +87,10 @@ module.exports = {
     /*
      * Forbid modules without exports, or exports without matching import in another module.
      * https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-unused-modules.md
+     * Unkonwn error on load (Error while loading rule 'import/no-unused-modules)
      */
     'import/no-unused-modules': [
-      'error',
+      'off',
       {
         // IgnoreExports: [],
         missingExports: true,
