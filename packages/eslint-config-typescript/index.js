@@ -11,6 +11,7 @@ module.exports = {
         './rules/compatibility.js',
         './rules/typescript.js',
         './rules/style.js',
+        './rules/import.js',
       ].map(require.resolve),
       parser: '@typescript-eslint/parser',
       parserOptions: {
@@ -19,15 +20,7 @@ module.exports = {
       },
       plugins: ['@typescript-eslint'],
       rules: {
-        // eslint
-        "no-constant-condition": 'off',
-
-        // eslint-plugin-import
-        "import/named": "off",
-        'import/default': 'off',
-        'import/namespace': 'off',
-        'import/no-unresolved': "off",
-        'import/order': ['error', {groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type']}],
+        'no-constant-condition': 'off',
       },
     },
   ],
