@@ -478,7 +478,7 @@ module.exports = {
      * Enforce the use of for-of loop over the standard for loop where possible
      * https://typescript-eslint.io/rules/prefer-for-of/
      */
-    '@typescript-eslint/prefer-for-of': 'error',
+    '@typescript-eslint/prefer-for-of': 'off',
 
     /*
      * Enforce using function types instead of interfaces with call signatures
