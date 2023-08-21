@@ -11,16 +11,11 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.mjs', '.js', '.json']
-      }
+        extensions: ['.mjs', '.js', '.json'],
+      },
     },
-    'import/extensions': [
-      '.js',
-      '.mjs',
-      '.jsx',
-    ],
-    'import/core-modules': [
-    ],
+    'import/extensions': ['.js', '.mjs', '.jsx'],
+    'import/core-modules': [],
     'import/ignore': [
       'node_modules',
       '\\.(coffee|scss|css|less|hbs|svg|json)$',
@@ -246,7 +241,7 @@ module.exports = {
      * Enforce or ban the use of inline type-only markers for named imports
      * https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/consistent-type-specifier-style.md
      */
-    'import/consistent-type-specifier-style': ['error', 'prefer-inline'],
+    'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
 
     /*
      * Enforce a leading comment with the webpackChunkName for dynamic imports

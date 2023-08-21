@@ -23,6 +23,7 @@ module.exports = {
     'import/named': 'off',
     'import/default': 'off',
     'import/namespace': 'off',
+    'import/consistent-type-specifier-style': 'off',
 
     'import/no-unresolved': ['error', { commonjs: false, caseSensitive: true }],
     'import/order': [
