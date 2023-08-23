@@ -4,6 +4,10 @@
 module.exports = {
   root: true,
   extends: ['@wardes/eslint-config'],
+  env: {
+    browser: true,
+    node: true,
+  },
   overrides: [
     {
       files: ['**/*.ts?(x)'],

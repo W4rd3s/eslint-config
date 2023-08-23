@@ -1,4 +1,10 @@
 module.exports = {
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
+
   rules: {
     /*
      * Enforces consistent naming for boolean props
