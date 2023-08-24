@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a784b74-4a4d-4265-ac6f-839179f257b9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eslint-config-typescript/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../eslint-config-typescript/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eslint-config-typescript/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../eslint-config-typescript/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eslint-config-typescript/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../eslint-config-typescript/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rules/import.js" beforeDir="false" afterPath="$PROJECT_DIR$/rules/import.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +46,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
   <component name="ProjectId" id="2Rw2KQ34JwvhnrukuY6etBPsZaP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -50,6 +56,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
@@ -79,6 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1688146758986</updated>
       <workItem from="1688146760164" duration="1345000" />
+      <workItem from="1691827219067" duration="13000" />
     </task>
     <servers />
   </component>

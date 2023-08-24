@@ -8,6 +8,19 @@ module.exports = {
     node: true,
   },
   plugins: ['import'],
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.mjs', '.js', '.json'],
+      },
+    },
+    'import/extensions': ['.js', '.mjs', '.jsx'],
+    'import/core-modules': [],
+    'import/ignore': [
+      'node_modules',
+      '\\.(coffee|scss|css|less|hbs|svg|json)$',
+    ],
+  },
   rules: {
     /// ///////////////////
     /* Helpful warnings */
@@ -87,9 +100,10 @@ module.exports = {
     /*
      * Forbid modules without exports, or exports without matching import in another module.
      * https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-unused-modules.md
+     * Unkonwn error on load (Error while loading rule 'import/no-unused-modules)
      */
     'import/no-unused-modules': [
-      'error',
+      'off',
       {
         // IgnoreExports: [],
         missingExports: true,
@@ -227,7 +241,7 @@ module.exports = {
      * Enforce or ban the use of inline type-only markers for named imports
      * https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/consistent-type-specifier-style.md
      */
-    'import/consistent-type-specifier-style': ['error', 'prefer-inline'],
+    'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
 
     /*
      * Enforce a leading comment with the webpackChunkName for dynamic imports
