@@ -10,6 +10,7 @@ on:
         options:
           - eslint-config
           - eslint-config-typescript
+          - eslint-config-react
 
 jobs:
   deploy:
