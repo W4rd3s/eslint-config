@@ -3,50 +3,21 @@
  */
 module.exports = {
   root: true,
-  extends: ['@wardes/eslint-config'],
+  extends: ['@wardes/eslint-config-typescript'],
   env: {
     browser: true,
     node: true,
+    es6: true,
   },
   overrides: [
     {
       files: ['**/*.ts?(x)'],
       extends: [
-        './rules/compatibility.js',
-        './rules/typescript.js',
-        './rules/style.js',
+        './rules/react.js',
+        './rules/hooks.js',
+        './rules/jsx-a11y.js',
       ].map(require.resolve),
-      parser: '@typescript-eslint/parser',
-      parserOptions: {
-        ecmaVersion: 'latest',
-        sourceType: 'module',
-      },
-      plugins: ['@typescript-eslint'],
-      rules: {
-        // eslint
-        'no-constant-condition': 'off',
-
-        // eslint-plugin-import
-        'import/named': 'off',
-        'import/default': 'off',
-        'import/namespace': 'off',
-        'import/no-unresolved': 'off',
-        'import/order': [
-          'error',
-          {
-            groups: [
-              'builtin',
-              'external',
-              'internal',
-              'parent',
-              'sibling',
-              'index',
-              'object',
-              'type',
-            ],
-          },
-        ],
-      },
+      rules: {},
     },
   ],
 };

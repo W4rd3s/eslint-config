@@ -24,7 +24,6 @@ module.exports = {
     /*
      * Enforce all defaultProps have a corresponding non-required PropType
      * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/default-props-match-prop-types.md
-     * TODO: disabled for typescript ?
      */
     'react/default-props-match-prop-types': 'error',
 
@@ -37,8 +36,9 @@ module.exports = {
     /*
      * Disallow missing displayName in a React component definition
      * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/display-name.md
+     * Can be covered by typescript
      */
-    'react/display-name': 'error',
+    'react/display-name': 'off',
 
     /*
      * Disallow certain props on components
@@ -61,7 +61,6 @@ module.exports = {
     /*
      * 	Disallow using another component's propTypes
      * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/forbid-foreign-prop-types.md
-     * TODO: disabled for typescript ?
      */
     'react/forbid-foreign-prop-types': 'error',
 
@@ -329,7 +328,6 @@ module.exports = {
     /*
      * Enforce props alphabetical sorting
      * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-sort-props.md
-     * TODO: activate ?
      */
     'react/jsx-sort-props': 'off',
 
@@ -495,9 +493,8 @@ module.exports = {
     /*
      * Disallow common typos
      * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-typos.md
-     * TODO: turn off in typescript ?
      */
-    'react/no-typos': 'error',
+    'react/no-typos': 'off',
 
     /*
      *	Disallow unescaped HTML entities from appearing in markup
@@ -514,8 +511,9 @@ module.exports = {
     /*
      * Disallow usage of unsafe lifecycle methods
      * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unsafe.md
+     * Covered by typescript
      */
-    'react/no-unsafe': ['error', { checkAliases: true }],
+    'react/no-unsafe': ['off', { checkAliases: true }],
 
     /*
      * Disallow creating unstable components inside components
@@ -532,9 +530,9 @@ module.exports = {
     /*
      * Disallow definitions of unused propTypes
      * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unused-prop-types.md
-     * TODO: turn off in typescript
+     * Covered by typescript
      */
-    'react/no-unused-prop-types': 'error',
+    'react/no-unused-prop-types': 'off',
 
     /*
      * Disallow definitions of unused state
@@ -563,9 +561,8 @@ module.exports = {
     /*
      * Enforce that props are read-only
      * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prefer-read-only-props.md
-     * TODO: enable for typescript
      */
-    'react/prefer-read-only-props': 'off',
+    'react/prefer-read-only-props': 'error',
 
     /*
      * Enforce stateless components to be written as a pure function
@@ -604,8 +601,9 @@ module.exports = {
     /*
      * Enforce ES5 or ES6 class for returning value in render function
      * https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/require-render-return.md
+     * Covered by typescript
      */
-    'react/require-render-return': 'error',
+    'react/require-render-return': 'off',
 
     /*
      * Disallow extra closing tags for components without children
