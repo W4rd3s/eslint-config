@@ -1,17 +1,9 @@
 # eslint-config
 
-> Personal Eslint config (react)
+> Personal Eslint config (react + typescript)
 
 > Prettier friendly !
 
----
-<b><ins>Rules are based on:</ins></b>
-
-eslint: v8.35.0
-
-
-
-eslint-config-prettier: v8.8.0
 
 ---
 ## Installation
@@ -36,5 +28,37 @@ Add the following to your eslint config:
   "extends": [
     "@wardes/eslint-config-react"
   ]
+}
+```
+or for nextjs:
+
+```json
+{
+  "extends": [
+    "@wardes/eslint-config-react/next"
+  ]
+}
+```
+And add ECMAScript env in your eslint config from [Eslint envrionement config](https://eslint.org/docs/latest/use/configure/language-options#specifying-environments)
+
+<br>
+Typescript compilerOptions (in tsconfig.json) :
+
+```json
+{
+  "strict": true,
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}
+```
+or
+```json
+{
+  "noImplicitAny": true,
+  "strictNullChecks": true,
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
 }
 ```
