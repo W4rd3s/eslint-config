@@ -5,31 +5,6 @@
 > Prettier friendly !
 
 ---
-<b><ins>Rules are based on:</ins></b>
-
-eslint: v8.35.0
-
-typescript-eslint: v5.60.0
-
-eslint-config-prettier: v8.8.0
-
----
-<b><ins>Typescript compilerOptions:</ins></b>
-
-```json
-{
-  "strict": true,
-}
-```
-or
-```json
-{
-  "noImplicitAny": true,
-  "strictNullChecks": true,
-}
-```
-
-
 ## Installation
 
 Install `@wardes/eslint-config-typescript`:
@@ -45,12 +20,36 @@ yarn add -D eslint typescript @wardes/eslint-config-typescript
 pnpm add -D eslint typescript @wardes/eslint-config-typescript
 ```
 
-Add the following to your eslint config:
-
+Add ECMAScript env in your eslint config from [Eslint envrionement config](https://eslint.org/docs/latest/use/configure/language-options#specifying-environments) and extends config:
 ```json
 {
+  "env": {
+    "es6": true
+  },
   "extends": [
     "@wardes/eslint-config-typescript"
   ]
+}
+```
+
+<br>
+Typescript compilerOptions (in tsconfig.json) :
+
+```json
+{
+  "strict": true,
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}
+```
+or
+```json
+{
+  "noImplicitAny": true,
+  "strictNullChecks": true,
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
 }
 ```

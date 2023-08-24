@@ -114,7 +114,7 @@ module.exports = {
 
     /*
      * Require explicit return types on functions and class methods
-     * @typescript-eslint/explicit-function-return-type
+     * https://typescript-eslint.io/rules/explicit-function-return-type
      */
     '@typescript-eslint/explicit-function-return-type': 'error',
 
