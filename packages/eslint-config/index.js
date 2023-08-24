@@ -2,6 +2,11 @@
  * @type {import("eslint").Linter.Config}
  */
 module.exports = {
+  env: {
+    browser: true,
+    node: true,
+    commonjs: true,
+  },
   extends: [
     './rules/javascript.js',
     './rules/style.js',
