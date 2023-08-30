@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-react",
+  "name": "@wardes/eslint-config-react",
   "version": "1.0.0",
   "description": "Personal ESLint config (react)",
   "repository": "W4rd3s/eslint-config",
