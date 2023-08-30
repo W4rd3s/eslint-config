@@ -1,4 +1,4 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
 
 settings:
   autoInstallPeers: true
@@ -12,8 +12,8 @@ dependencies:
     specifier: ^5.62.0
     version: 5.62.0(eslint@8.46.0)(typescript@5.1.6)
   '@wardes/eslint-config':
-    specifier: ^1.0.9
-    version: 1.0.9(@typescript-eslint/parser@5.62.0)(eslint@8.46.0)
+    specifier: ^1.0.13
+    version: 1.0.13(@typescript-eslint/parser@5.62.0)(eslint@8.46.0)
   eslint-plugin-import:
     specifier: ^2.28.0
     version: 2.28.0(@typescript-eslint/parser@5.62.0)(eslint@8.46.0)
@@ -248,8 +248,8 @@ packages:
       eslint-visitor-keys: 3.4.3
     dev: false
 
-  /@wardes/eslint-config@1.0.9(@typescript-eslint/parser@5.62.0)(eslint@8.46.0):
-    resolution: {integrity: sha512-0xZIX262ku4ZZxM+oLCeVAdyKr2k3+rDKOVRNJnJeaYCNopkFPHeQqOPZCOWgXBkRGGZpiZwm0iLQE/r44tL3w==}
+  /@wardes/eslint-config@1.0.13(@typescript-eslint/parser@5.62.0)(eslint@8.46.0):
+    resolution: {integrity: sha512-zn52YtemN+6QEhnVgp1ROmWvbA6So+Eta+7CuI27L+9MUYp6lYq+KzksBBkIfWueRf9CqjRifRBiTMTcQPtOEQ==}
     peerDependencies:
       eslint: ^8.35.0
     dependencies:
