@@ -16,6 +16,10 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
+  env: {
+    browser: true,
+    node: true,
+  },
   root: true,
   rules: {},
 };
