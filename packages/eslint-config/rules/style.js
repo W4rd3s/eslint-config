@@ -64,7 +64,7 @@ module.exports = {
      * Require or disallow trailing commas
      * https://eslint.org/docs/latest/rules/comma-dangle
      */
-    'comma-dangle': ['error', 'always-multiline'],
+    'comma-dangle': "off",
 
     /*
      * Enforce consistent spacing before and after commas
